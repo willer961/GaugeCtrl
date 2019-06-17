@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TestGauge.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TestGauge.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TestGauge"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TestGauge 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TESTGAUGE_DIALOG DIALOGEX 0, 0, 523, 293
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TestGauge"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "自定义1",IDC_CUSTOM1,"GaugeCtrl",WS_TABSTOP,4,21,240,240
+    CONTROL         "",IDC_SLIDER_FRM,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,423,32,97,15
+    LTEXT           "表框宽",IDC_STATIC,388,37,25,8
+    LTEXT           "静态",IDC_BACK1,312,55,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "背板色1",IDC_STATIC,277,59,29,8
+    LTEXT           "静态",IDC_BACK2,367,55,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "背板色2",IDC_STATIC,336,59,29,8
+    LTEXT           "静态",IDC_RG1,312,128,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "分段色1",IDC_STATIC,277,132,29,8
+    LTEXT           "静态",IDC_RG2,312,148,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "分段色2",IDC_STATIC,277,152,29,8
+    LTEXT           "静态",IDC_RG3,312,168,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "分段色3",IDC_STATIC,277,172,29,8
+    LTEXT           "静态",IDC_PTCOLOR,312,246,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "指针色",IDC_STATIC,277,250,25,8
+    LTEXT           "指针长度",IDC_STATIC,336,250,33,8
+    CONTROL         "",IDC_SLIDER_PT,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,381,248,139,15
+    LTEXT           "分段2结束值",IDC_STATIC,336,152,45,8
+    CONTROL         "",IDC_SLIDER_RG2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,381,148,139,15
+    LTEXT           "分段1结束值",IDC_STATIC,336,132,45,8
+    CONTROL         "",IDC_SLIDER_RG1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,381,127,139,15
+    LTEXT           "最小值",IDC_STATIC,278,97,25,8
+    EDITTEXT        IDC_EDIT_MIN,306,95,40,14,ES_AUTOHSCROLL
+    LTEXT           "最大值",IDC_STATIC,361,96,25,8
+    EDITTEXT        IDC_EDIT_MAX,389,94,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "刻度盘",IDC_STATIC,267,81,253,161
+    LTEXT           "主刻度段数",IDC_STATIC,277,113,41,8
+    EDITTEXT        IDC_EDIT_MAJOR,322,111,40,14,ES_AUTOHSCROLL
+    LTEXT           "次刻度段数",IDC_STATIC,380,112,41,8
+    EDITTEXT        IDC_EDIT_MINOR,423,110,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "表盘",IDC_STATIC,267,3,253,74
+    LTEXT           "静态",IDC_FRM_CLR1,312,34,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "表框色1",IDC_STATIC,277,38,29,8
+    LTEXT           "静态",IDC_FRM_CLR2,367,33,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "表框色2",IDC_STATIC,336,37,29,8
+    LTEXT           "静态",IDC_BORDER_CLR,312,13,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "边界色1",IDC_STATIC,277,17,29,8
+    LTEXT           "静态",IDC_LABLE_CLR,371,167,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "主刻度色",IDC_STATIC,336,171,33,8
+    LTEXT           "",IDC_STATIC,336,193,8,8
+    LTEXT           "静态",IDC_MINOR_CLR,429,167,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "次刻度色",IDC_STATIC,395,171,33,8
+    LTEXT           "分段条宽",IDC_STATIC,278,192,33,8
+    CONTROL         "",IDC_SLIDER_RGW,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,311,188,74,15
+    LTEXT           "刻度偏移",IDC_STATIC,278,210,33,8
+    CONTROL         "",IDC_SLIDER_TICK_OFFSET,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,311,206,74,15
+    LTEXT           "文字偏移",IDC_STATIC,278,227,33,8
+    CONTROL         "",IDC_SLIDER_LABEL_OFFSET,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,311,223,74,15
+    LTEXT           "刻度长度",IDC_STATIC,396,211,33,8
+    CONTROL         "",IDC_SLIDER_TICKLEN,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,439,207,74,15
+    LTEXT           "分段条偏移",IDC_STATIC,395,192,41,8
+    CONTROL         "",IDC_SLIDER_RG_OFFSET,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,439,188,74,15
+    LTEXT           "数值",IDC_STATIC,17,275,17,8
+    CONTROL         "",IDC_SLIDER_VALUE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,45,264,198,21
+    LTEXT           "静态",IDC_DIGICLR,312,269,17,17,SS_NOTIFY | WS_BORDER
+    LTEXT           "数显色",IDC_STATIC,277,273,25,8
+    LTEXT           "数显大小",IDC_STATIC,336,273,33,8
+    CONTROL         "",IDC_SLIDER_DIGI,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,381,271,79,15
+    CONTROL         "高亮效果",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,473,273,48,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TestGauge.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "TestGauge.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TestGauge(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TestGauge.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
