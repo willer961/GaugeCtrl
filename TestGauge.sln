@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestGauge", "TestGauge\TestGauge.vcxproj", "{1D779292-02F0-461B-BD84-E33BF79E8699}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CB0EB5CC-B062-49AE-9947-6509E2DEEC1F} = {CB0EB5CC-B062-49AE-9947-6509E2DEEC1F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GaugeCtrl", "GaugeCtrl\SimpleGauge.vcxproj", "{CB0EB5CC-B062-49AE-9947-6509E2DEEC1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D779292-02F0-461B-BD84-E33BF79E8699}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D779292-02F0-461B-BD84-E33BF79E8699}.Debug|Win32.Build.0 = Debug|Win32
+		{1D779292-02F0-461B-BD84-E33BF79E8699}.Release|Win32.ActiveCfg = Release|Win32
+		{1D779292-02F0-461B-BD84-E33BF79E8699}.Release|Win32.Build.0 = Release|Win32
+		{CB0EB5CC-B062-49AE-9947-6509E2DEEC1F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB0EB5CC-B062-49AE-9947-6509E2DEEC1F}.Debug|Win32.Build.0 = Debug|Win32
+		{CB0EB5CC-B062-49AE-9947-6509E2DEEC1F}.Release|Win32.ActiveCfg = Release|Win32
+		{CB0EB5CC-B062-49AE-9947-6509E2DEEC1F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
